@@ -10,8 +10,10 @@ orbital_periods_per_planet = {
 }
 
 def calculate_celestial_age(seconds, planet):
+    if seconds <= 0:
+        raise ValueError()
     earth_years = seconds / (365.25 * 24 * 60 * 60) # 365.25 days in a year
     try:
-        return round(earth_years / orbital_periods_per_planet[planet.islower() and planet or planet.lower()],2)
+        return round(earth_years / orbital_periods_per_planet[planet.islower() and planet or planet.lower()], 2)
     except Exception as e:
         raise Exception(f"Invalid planet: {planet}") from e

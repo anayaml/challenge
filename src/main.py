@@ -1,5 +1,5 @@
-import src.app.planets as planets
-import src.utils.util as formatting_input
+import app.planets as planets
+import utils.util as formatting_input
 
 if __name__ == "__main__":
     user_input = input()
