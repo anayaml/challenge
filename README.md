@@ -8,7 +8,7 @@
 
 ## Como executar - Execução Local
     git clone https://github.com/anayaml/challenge
-    cd voxus-challenge .
+    cd challenge .
     pip install -r requirements.txt
     python main.py
 ## Como executar - Docker Image
