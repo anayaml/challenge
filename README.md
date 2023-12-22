@@ -14,8 +14,8 @@
 ## Como executar - Docker Image
 
     git clone https://github.com/anayaml/challenge
-    docker build -t voxus_challenge .
-    docker run -it voxus_challenge
+    docker build -t challenge .
+    docker run -it challenge
 Example of a valid input:
 
     2500000000 (seconds) / "Mars" (type)
